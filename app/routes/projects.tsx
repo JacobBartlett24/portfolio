@@ -24,10 +24,11 @@ export default function Projects(){
           return(
             <div key={project.name} className='projectCard'>
               <img className='projectImage' src={project.image} alt={project.name} />
-              <h2 className='projectName'>{project.name}</h2>
-              <h3 className='projectTools'>{project.tools}</h3>
-              <p className='projectDescription'>{project.description}</p>
-              <a className='projectURL' href={project.url}>View</a>
+              <div className='lowerCard'>
+                <h2 className='projectName'><a href={project.url}>{project.name}</a></h2>
+                <h3 className='projectDescription'>{project.description}</h3>
+                <p className='projectTools'>Tools: {project.tools}</p>
+              </div>
             </div>
           )
         })}
