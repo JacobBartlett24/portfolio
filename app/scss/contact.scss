@@ -3,5 +3,66 @@
 .contactPage{
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   color: $textColor;
+}
+
+.contactCard{
+  display: grid;
+  grid-template-rows: 3rem 1fr 3rem;
+  width: 800px;
+  height: 300px;
+  border-radius: 15px;
+  box-shadow: $boxShadowBlack;
+  background-color: $secondaryBlack;
+  margin: 20px;
+  padding: 20px;
+
+  .cardHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .cardBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .contactMethod{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    h2{
+      margin: 0;
+      padding: 0;
+    }
+
+    a{
+      color: $textColor;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  }
+}
+
+.contactWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 76.3vh;
+  width: 100%;
+  margin: 20px;
 }
