@@ -3,7 +3,7 @@ import { Link } from "@remix-run/react"
 export default function NavBar(){
   return(
     <div className="navBar">
-      <ul className="sections">
+      <ul  className="sections">
         <Link prefetch="intent" to={"/resume"}>
           <li>Resume</li>
         </Link>

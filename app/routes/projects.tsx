@@ -1,6 +1,7 @@
 import type { LinksFunction } from '@remix-run/node';
 import styles from '~/styles/project.css'
 import data from '../data/projects.json'
+import { Link } from '@remix-run/react';
 
 type Project = {
   name: string,
@@ -22,14 +23,14 @@ export default function Projects(){
       <div className='projectContainer'>
         {projects.map((project: Project) => {
           return(
-            <div key={project.name} className='projectCard'>
+            <Link to={project.url} key={project.name} className='projectCard'>
               <img className='projectImage' src={project.image} alt={project.name} />
               <div className='lowerCard'>
                 <h2 className='projectName'><a href={project.url}>{project.name}</a></h2>
                 <h3 className='projectDescription'>{project.description}</h3>
                 <p className='projectTools'>Tools: {project.tools}</p>
               </div>
-            </div>
+            </Link>
           )
         })}
         </div>

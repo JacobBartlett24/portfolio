@@ -6,11 +6,19 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import styles from "./styles/root.css"
+import styles from "./styles/root.css";
+import bodyStyles from "./styles/body.css";
+import headerStyles from "./styles/header.css";
+import navStyles from "./styles/navbar.css";
 import type { LinksFunction } from "@remix-run/node"; // or cloudflare/deno
+import Header from "./components/Header";
+import NavBar from "./components/NavBar";
 
 export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: styles }];
+  return [{ rel: "stylesheet", href: styles },
+          { rel: "stylesheet", href: headerStyles},
+          { rel: "stylesheet", href: navStyles},
+          { rel: "stylesheet", href: bodyStyles},];
 };
 
 export default function App() {
@@ -23,7 +31,11 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
+        <Header />
+        <div className="mainGrid">
+          <NavBar />
+          <Outlet />
+        </div>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />

@@ -1,0 +1,31 @@
+{
+  "projects":
+  [{
+    "name": "Albumdle",
+    "description": "A website similar to Wordle, but instead of words its the top albums of all time.",
+    "tools": "TypeScript, Postgres, React, Remix, Chakra ui, and the Spotify API.",
+    "image": "https://i.imgur.com/G0H7eko.png",
+    "url": "https://www.albumdle.app/"
+  },
+  {
+    "name": "Webscraping Website",
+    "description": "A website that takes the weekly prices of Target's and Urban Outfitters products and displays them in a list.",
+    "tools": "TypeScript, React, MongoDB, Remix, Chakra ui, and cron jobs",
+    "image": "https://cdn.midjourney.com/ec168cd6-4e22-4a37-b384-53e33168c4ad/0_3.png",
+    "url": "https://webscraping-app.vercel.app/"
+  },
+  {
+    "name": "Spotify Stats Game",
+    "description": "A website that takes your top 100 songs and creates a game of guessing which song is deemed more popular.",
+    "tools": "JavaScript, React, Node.js, Chakra ui, and the Spotify API.",
+    "image": "https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Green.png",
+    "url": "https://github.com/JacobBartlett24/SpotifyStatsGame"
+  },
+  {
+    "name": "Music Weather Website",
+    "description": "A website that takes will make you a playlist based on the weather in your area.",
+    "tools": "JavaScript, Node.js, and the Spotify API.",
+    "image": "https://cdn.midjourney.com/47a789e3-5733-4c29-b490-cdaf80ffb597/0_0.png",
+    "url": "https://github.com/RileyMoore01/TempestTunes"
+  }]
+}

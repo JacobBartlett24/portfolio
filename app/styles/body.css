@@ -1,29 +1,13 @@
 .body {
   background-color: #1a1a1a;
   color: rgba(235, 235, 235, 0.87);
-  display: grid;
-  grid-template-columns: 15vw 85vw;
-  padding: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .portfolioTitle {
   font-size: 3rem;
   text-align: center;
-}
-
-.navBar {
-  width: 100%;
-  border-right: 1px solid rgba(48, 48, 48, 0.5);
-}
-.navBar .sections {
-  list-style: none;
-  line-height: 3rem;
-}
-.navBar li {
-  transition: color 0.25s;
-}
-.navBar li:hover {
-  color: #37DA96;
 }
 
 /*# sourceMappingURL=body.css.map */

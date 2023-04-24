@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "InterTight", sans-serif;
+  box-sizing: border-box;
 }
 
 h1 {

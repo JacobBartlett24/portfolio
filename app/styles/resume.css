@@ -1,0 +1,19 @@
+.resumePage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: rgba(235, 235, 235, 0.87);
+}
+
+#image {
+  height: 900px;
+  width: 690px;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07), 0 1px 4px rgba(0, 0, 0, 0.07);
+}
+
+#resumeTitle {
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=resume.css.map */

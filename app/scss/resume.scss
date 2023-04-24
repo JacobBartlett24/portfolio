@@ -1,0 +1,19 @@
+@import "utilities";
+
+.resumePage{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: $textColor;
+}
+
+#image{
+  height: 900px;
+  width: 690px;
+  border-radius: 15px;
+  box-shadow: $boxShadowBlack;
+}
+
+#resumeTitle{
+  margin-bottom: 10px;
+}
