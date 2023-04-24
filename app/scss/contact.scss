@@ -16,6 +16,7 @@
   border-radius: 15px;
   box-shadow: $boxShadowBlack;
   background-color: $secondaryBlack;
+  border: $borderblack;
   margin: 20px;
   padding: 20px;
 
@@ -29,7 +30,7 @@
 
   .cardBody{
     display: flex;
-    justify-content: center;
+    justify-content: space-around ;
     align-items: center;
     font-size: 1rem;
     font-weight: 400;
@@ -53,6 +54,11 @@
       color: $textColor;
       text-decoration: none;
       font-weight: 600;
+      transition: color .25s;
+    }
+
+    a:hover{
+      color: $iconColor;
     }
   }
 }
@@ -65,4 +71,22 @@
   height: 76.3vh;
   width: 100%;
   margin: 20px;
+}
+
+.icons{
+  display: flex;
+  svg{
+    color: $iconColor;
+
+    margin: 0 5px 0  0;
+    height: 20px;
+    width: 20px;
+    transition: color .25s;
+    text-decoration: none;
+  }
+
+  svg:hover{
+    color: $iconHoverColor;
+  }
+
 }

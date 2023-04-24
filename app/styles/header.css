@@ -13,16 +13,21 @@
   align-items: center;
   font-size: 1.5rem;
   font-weight: 500;
+  text-decoration: none;
   color: rgba(235, 235, 235, 0.87);
 }
-.header #icons {
+.header .icons {
   display: flex;
-  color: rgba(235, 235, 235, 0.7);
 }
-.header #icons svg {
+.header .icons svg {
+  color: rgba(235, 235, 235, 0.7);
   margin: 0 5px 0 0;
   height: 20px;
   width: 20px;
+  transition: color 0.25s;
+}
+.header .icons svg:hover {
+  color: rgba(235, 235, 235, 0.9);
 }
 
 .mainGrid {

@@ -14,6 +14,7 @@
   border-radius: 15px;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07), 0 1px 4px rgba(0, 0, 0, 0.07);
   background-color: #2f2f2f;
+  border: 1px solid rgba(48, 48, 48, 0.5);
   margin: 20px;
   padding: 20px;
 }
@@ -26,7 +27,7 @@
 }
 .contactCard .cardBody {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   font-size: 1rem;
   font-weight: 400;
@@ -49,6 +50,10 @@
   color: rgba(235, 235, 235, 0.87);
   text-decoration: none;
   font-weight: 600;
+  transition: color 0.25s;
+}
+.contactCard .contactMethod a:hover {
+  color: rgba(235, 235, 235, 0.7);
 }
 
 .contactWrapper {
@@ -59,6 +64,21 @@
   height: 76.3vh;
   width: 100%;
   margin: 20px;
+}
+
+.icons {
+  display: flex;
+}
+.icons svg {
+  color: rgba(235, 235, 235, 0.7);
+  margin: 0 5px 0 0;
+  height: 20px;
+  width: 20px;
+  transition: color 0.25s;
+  text-decoration: none;
+}
+.icons svg:hover {
+  color: rgba(235, 235, 235, 0.9);
 }
 
 /*# sourceMappingURL=contact.css.map */
