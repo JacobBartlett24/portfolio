@@ -1,6 +1,25 @@
 .header {
   height: 80px;
-  background-color: black;
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.header #title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+.header #icons {
+  color: rgba(235, 235, 235, 0.5);
+}
+.header #icons svg {
+  height: 20px;
+  width: 20px;
 }
 
 /*# sourceMappingURL=header.css.map */
