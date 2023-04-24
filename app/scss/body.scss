@@ -2,4 +2,29 @@
 
 .body{
   background-color: $black;
+  color: $textColor;
+  display: grid;
+  grid-template-columns: 15vw 85vw;
+  padding: 40px;
+}
+
+.portfolioTitle{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.navBar{
+  width: 100%;
+  border-right: $borderblack;
+
+  .sections{
+    list-style: none;
+    line-height: 3rem;
+  }
+  li{
+    transition: color .25s;
+  }
+  li:hover{
+    color: $textHoverColor;
+  }
 }

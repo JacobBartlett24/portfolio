@@ -1,14 +1,13 @@
 import type { LinksFunction } from "@remix-run/node";
-import styles from "../styles/body.css";
+import NavBar  from "./NavBar";
 
-export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: styles }];
-};
 
 export default function Body() {
   return(
     <div className="body">
-      bodysadasd
+      <NavBar />
+      <h1 className="portfolioTitle">Jacob Bartlett's <br/> Portfolio</h1>
+
     </div>
   )
 }
