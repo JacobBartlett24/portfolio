@@ -10,15 +10,12 @@ export default function Header(){
   return(
     <>
       <div className="header">
-        <span id="icons">
-         <BsGithub />
-         <BsLinkedin />
-        </span>
         <span id="title">
           Portfolio
         </span>
-        <span>
-
+        <span id="icons">
+         <BsGithub />
+         <BsLinkedin />
         </span>
       </div>
     </>

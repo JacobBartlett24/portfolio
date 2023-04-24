@@ -1,10 +1,11 @@
 import type { V2_MetaFunction } from "@remix-run/node";
 import type { LinksFunction } from "@remix-run/node"; // or cloudflare/deno
 
-import {BsGithub} from "react-icons/bs";
-
 import styles from "../styles/header.css";
 import Header from "../components/Header";
+import Body from "../components/Body";
+import { Outlet } from "@remix-run/react";
+
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: styles }];
 };
@@ -17,9 +18,7 @@ export default function Index() {
   return (
     <>
       <Header />
-      <div className="main">
-
-      </div>
+      <Body />
     </>
   );
 }

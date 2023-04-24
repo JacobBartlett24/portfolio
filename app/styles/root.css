@@ -1,5 +1,11 @@
 body {
   margin: 0;
+  font-family: "InterTight", sans-serif;
+}
+
+@font-face {
+  font-family: "InterTight";
+  src: url(../../public/InterTight-VariableFont_wght.ttf) format("truetype");
 }
 
 /*# sourceMappingURL=root.css.map */
