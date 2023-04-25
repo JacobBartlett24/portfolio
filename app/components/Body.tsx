@@ -32,8 +32,8 @@ export default function Body() {
           <SiTypescript size="300px" color="#007acc" />
           <FaPython size="300px" color="#37DA96"/>
         </div>
+        <h2>Project I'm Most Proud Of</h2>
         <div className="projectSpotlight">
-          <h2>Project I'm Most Proud Of</h2>
           <div id="projectWrapper">
             <img alt="Albumdle" src={albumdleImg} />
             <Link id="overlay" to="https://www.albumdle.app"><p>Wordle for music</p></Link>
