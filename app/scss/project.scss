@@ -6,6 +6,7 @@
   background-color: $secondaryBlack;
   transition: box-shadow .25s, height .25s, width .25s;
   border-radius: 30px;
+  box-shadow: $boxShadowBlack;
   text-decoration: none;
   color: $textColor;
   &:hover{
@@ -14,12 +15,15 @@
   }
 }
 
+#title{
+  font-size: 3rem
+}
+
 .projectPage{
   display: flex;
   flex-direction: column;
   align-items: center;
   color: $textColor;
-  padding: 20px;
 }
 
 .projectContainer{

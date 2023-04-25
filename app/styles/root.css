@@ -16,5 +16,19 @@ h1 {
   font-family: "InterTight";
   src: url(../../public/InterTight-VariableFont_wght.ttf) format("truetype");
 }
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #37DA96;
+}
 
 /*# sourceMappingURL=root.css.map */

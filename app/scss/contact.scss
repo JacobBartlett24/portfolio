@@ -8,6 +8,10 @@
   color: $textColor;
 }
 
+#title{
+  font-size: 3rem
+}
+
 .contactCard{
   display: grid;
   grid-template-rows: 3rem 1fr 3rem;

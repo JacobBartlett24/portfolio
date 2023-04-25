@@ -6,6 +6,10 @@
   color: rgba(235, 235, 235, 0.87);
 }
 
+#title {
+  font-size: 3rem;
+}
+
 .contactCard {
   display: grid;
   grid-template-rows: 3rem 1fr 3rem;

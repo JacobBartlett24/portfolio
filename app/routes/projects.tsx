@@ -19,7 +19,7 @@ export default function Projects(){
   const projects: Project[] = data.projects
   return(
     <div className='projectPage'>
-      <h1>Projects</h1>
+      <h1 id="title">Projects</h1>
       <div className='projectContainer'>
         {projects.map((project: Project) => {
           return(

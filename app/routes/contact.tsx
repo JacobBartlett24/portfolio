@@ -9,7 +9,7 @@ export const links: LinksFunction = () => {
 export default function Contact(){
   return(
     <div className="contactPage">
-      <h1>Contact Me</h1>
+      <h1 id="title">Contact Me</h1>
       <div className="contactWrapper">
         <div className="contactCard">
           <div className="cardHeader">
