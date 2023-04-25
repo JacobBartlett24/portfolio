@@ -3,7 +3,7 @@ import styles from "../styles/body.css";
 
 import albumdleImg from "../../public/albumdle.png";
 import { FaPython, FaReact } from "react-icons/fa";
-import { SiRemix, SiTypescript } from "react-icons/si";
+import { SiChakraui, SiRemix, SiSupabase, SiTypescript } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { Link } from "@remix-run/react";
 
@@ -37,6 +37,13 @@ export default function Body() {
           <div id="projectWrapper">
             <img alt="Albumdle" src={albumdleImg} />
             <Link id="overlay" to="https://www.albumdle.app"><p>Wordle for music</p></Link>
+          </div>
+          <div className="projectTools">
+            <FaReact />
+            <SiTypescript />
+            <SiRemix />
+            <SiSupabase />
+            <SiChakraui />
           </div>
         </div>
       </div>

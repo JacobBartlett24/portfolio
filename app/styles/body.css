@@ -59,6 +59,15 @@
   border-radius: 15px;
   position: relative;
 }
+.projectSpotlight .projectTools {
+  width: 100%;
+  padding-left: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+.projectSpotlight .projectTools * {
+  margin-right: 10px;
+}
 .projectSpotlight #overlay {
   position: absolute;
   top: 0;
