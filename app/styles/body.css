@@ -55,6 +55,31 @@
   align-items: center;
   flex-direction: column;
 }
+.projectSpotlight #projectWrapper {
+  border-radius: 15px;
+  position: relative;
+}
+.projectSpotlight #overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+  font-weight: 700;
+  font-size: 3rem;
+  text-decoration: none;
+  transition: color 0.25s, background-color 0.25s;
+}
+.projectSpotlight #overlay:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(235, 235, 235, 0.87);
+  display: flex;
+}
 .projectSpotlight img {
   border-radius: 15px;
   height: 500px;

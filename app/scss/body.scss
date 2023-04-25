@@ -57,7 +57,31 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  #projectWrapper{
+    border-radius: 15px;
+    position: relative;
+  }
+  #overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    font-weight: 700;
+    font-size: 3rem;
+    text-decoration: none;
+    transition: color .25s, background-color .25s;
+    &:hover{
+      background-color: rgba(0,0,0,0.8);
+      color: $textColor;
+      display: flex;
+    }
+  }
   img{
     border-radius: 15px;
     height: 500px;

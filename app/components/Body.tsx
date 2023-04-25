@@ -34,7 +34,10 @@ export default function Body() {
         </div>
         <div className="projectSpotlight">
           <h2>Project I'm Most Proud Of</h2>
-          <Link to="https://www.albumdle.app"><img alt="Albumdle" src={albumdleImg}/></Link>
+          <div id="projectWrapper">
+            <img alt="Albumdle" src={albumdleImg} />
+            <Link id="overlay" to="https://www.albumdle.app"><p>Wordle for music</p></Link>
+          </div>
         </div>
       </div>
     </div>
