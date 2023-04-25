@@ -29,6 +29,7 @@
   justify-content: center;
   justify-items: center;
   gap: 40px 20px;
+  margin: 0 0 5rem 0;
 }
 
 #imgHolder {
@@ -46,6 +47,21 @@
 #imgHolder #profilePicture {
   border-radius: 50%;
   width: 300px;
+}
+
+.projectSpotlight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.projectSpotlight img {
+  border-radius: 15px;
+  height: 500px;
+  transition: height 0.25s;
+}
+.projectSpotlight img:hover {
+  height: 550px;
 }
 
 /*# sourceMappingURL=body.css.map */

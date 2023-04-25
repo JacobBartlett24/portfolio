@@ -1,8 +1,12 @@
 import type { LinksFunction } from "@remix-run/node";
 import styles from "../styles/body.css";
+
+import albumdleImg from "../../public/albumdle.png";
 import { FaPython, FaReact } from "react-icons/fa";
 import { SiRemix, SiTypescript } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
+import { Link } from "@remix-run/react";
+
 
 
 export const links: LinksFunction = () => {
@@ -27,6 +31,10 @@ export default function Body() {
           <IoLogoJavascript size="300px" color="yellow" />
           <SiTypescript size="300px" color="#007acc" />
           <FaPython size="300px" color="#37DA96"/>
+        </div>
+        <div className="projectSpotlight">
+          <h2>Project I'm Most Proud Of</h2>
+          <Link to="https://www.albumdle.app"><img alt="Albumdle" src={albumdleImg}/></Link>
         </div>
       </div>
     </div>
