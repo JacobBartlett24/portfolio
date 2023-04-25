@@ -1,14 +1,16 @@
 @import "utilities";
 
 .navBar{
-  width: 100%;
+  width: 95%;
   border-right: $borderblack;
   background-color: $black;
-
   .sections{
     list-style: none;
     line-height: 3rem;
     margin: 0;
+    position: fixed;
+    top: 100px;
+    z-index: 0;
   }
   li{
     transition: color .25s;

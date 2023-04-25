@@ -6,6 +6,10 @@ body {
 
 h1 {
   margin: 0;
+  font-size: 72px;
+  background: -webkit-linear-gradient(#37DA96, rgba(235, 235, 235, 0.87));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @font-face {
