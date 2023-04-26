@@ -24,18 +24,6 @@
   color: rgba(235, 235, 235, 0.87);
 }
 
-.projectContainer {
-  display: grid;
-  grid-template-columns: 30rem 30rem;
-  width: 100%;
-  margin-top: 20px;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-  gap: 30px;
-}
-
 .projectImage {
   height: 200px;
   width: 99.8%;

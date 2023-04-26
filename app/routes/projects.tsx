@@ -21,19 +21,8 @@ export default function Projects(){
     <div className='projectPage'>
       <h1 id="title">Projects</h1>
       <div className='projectContainer'>
-        {projects.map((project: Project) => {
-          return(
-            <Link to={project.url} key={project.name} className='projectCard'>
-              <img className='projectImage' src={project.image} alt={project.name} />
-              <div className='lowerCard'>
-                <h2 className='projectName'><a href={project.url}>{project.name}</a></h2>
-                <h3 className='projectDescription'>{project.description}</h3>
-                <p className='projectTools'>Tools: {project.tools}</p>
-              </div>
-            </Link>
-          )
-        })}
-        </div>
+
+      </div>
     </div>
   )
 }

@@ -25,4 +25,8 @@
     text-decoration: none;
     color: $textColor
   }
+  .active{
+    color: $textHoverColor;
+  }
 }
+

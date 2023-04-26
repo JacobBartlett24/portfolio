@@ -1,21 +1,21 @@
-import { Link } from "@remix-run/react"
+import { NavLink } from "@remix-run/react"
 
 export default function NavBar(){
   return(
     <div className="navBar">
       <ul  className="sections">
-        <Link prefetch="intent" to={"/resume"}>
+        <NavLink prefetch="intent" to={"/resume"}>
           <li>Resume</li>
-        </Link>
-        <Link prefetch="intent" to="/projects">
+        </NavLink>
+        <NavLink prefetch="intent" to="/projects">
           <li>Projects</li>
-        </Link>
-        <Link prefetch="intent" to="/education">
+        </NavLink>
+        <NavLink prefetch="intent" to="/education">
           <li>Education</li>
-        </Link>
-        <Link prefetch="intent" to="/contact">
+        </NavLink>
+        <NavLink prefetch="intent" to="/contact">
           <li>Contact</li>
-        </Link>
+        </NavLink>
       </ul>
     </div>
   )

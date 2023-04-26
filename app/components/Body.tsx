@@ -6,20 +6,33 @@ import { FaPython, FaReact } from "react-icons/fa";
 import { SiChakraui, SiRemix, SiSupabase, SiTypescript } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { Link } from "@remix-run/react";
-
-
+import { useEffect, useState } from "react";
 
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: styles }];
 };
 
 export default function Body() {
+
+  const [offset, setOffset] = useState(0);
+
+  useEffect(() => {
+      const onScroll = () => setOffset(window.pageYOffset);
+      // clean up code
+      window.removeEventListener('scroll', onScroll);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      document.body.style.setProperty('--scroll', (window.pageYOffset / (document.body.offsetHeight - window.innerHeight)).toString());
+      return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  
+
   return(
     <div className="body">
       <h1 className="portfolioTitle">Jacob Bartlett's <br /> Portfolio</h1>
       <div className="mainContent">
         <div id="imgHolder">
-          <img id="profilePicture"alt="me" src="https://cdn.midjourney.com/fe42195e-b152-49c1-b0ef-b9276f82874a/0_3.png" />
+          <img className={offset > 230 ? "scrollBottom" : ""}id="profilePicture"alt="me" src="https://cdn.midjourney.com/fe42195e-b152-49c1-b0ef-b9276f82874a/0_3.png" />
           <p id="blurb">
             Web Development, Software Engineering, Design,<br/> and Data Science
           </p>

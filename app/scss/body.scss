@@ -16,7 +16,6 @@
 }
 
 .mainContent{
-  height: 300vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -46,12 +45,33 @@
     font-style: italic;
     text-align: center;
   }
+
   #profilePicture{
     border-radius: 50%;
     width: 300px;
+    animation-play-state: paused;
+    animation: moveToBottom 2s forwards ease-in-out;
+    animation-delay: calc(var(--scroll) * -1s);
+  }
+
+  #profilePicture:hover{
+    animation-play-state: running;
+    animation: spin 5s linear infinite;
+  }
+
+
+  @keyframes spin {
+    0%{
+      transform: rotatey(0deg);
+    }
+    100%{
+      transform: rotatey(360deg);
+    }
   }
 }
-  
+
+
+
 .projectSpotlight{
   display: flex;
   justify-content: center;
