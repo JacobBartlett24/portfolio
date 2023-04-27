@@ -3,9 +3,11 @@
 .header{
   height: 60px;
   background-color: $black;
-  display: flex;
+  display: grid;
+  grid-template-columns: 15vw 1fr;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  align-content: center;
   padding: 0 20px;
   border-bottom: $borderblack;
   position: sticky;
@@ -28,7 +30,7 @@
 
   .icons{
     display: flex;
-
+    justify-content: flex-end;
     svg{
       color: $iconColor;
       margin: 0 5px 0  0;
@@ -40,10 +42,35 @@
     svg:hover{
       color: $iconHoverColor;
     }
-
+    svg:last-child{
+      margin-left: 20px;
+    }
+    ul{
+      list-style: none;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      a{
+        text-decoration: none;
+        color: $textColor;
+        transition: color .25s;
+        font-size: .90rem;
+      }
+      li{
+        margin: 0 5px;
+      }
+      a:hover{
+        color: $textHoverColor;
+      }
+    }
+    .active {
+      color: $textHoverColor ;
+    }
   }
-  
 }
+
+
 
 .mainGrid{
   display: grid;

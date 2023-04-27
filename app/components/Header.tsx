@@ -1,7 +1,7 @@
 import type { LinksFunction } from "@remix-run/node";
 import styles from "../styles/header.css";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { Link } from "@remix-run/react";
+import { Link, NavLink } from "@remix-run/react";
 
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: styles }];
@@ -15,6 +15,28 @@ export default function Header(){
           <Link id="title" to="/">Portfolio</Link>
         
           <span className="icons">
+          <ul  className="sections">
+            <li>
+              <NavLink prefetch="intent" to={"/resume"}>
+                Resume
+              </NavLink>
+            </li>
+            <li>
+              <NavLink prefetch="intent" to="/projects">
+                Projects
+              </NavLink>
+            </li>
+            <li>
+              <NavLink prefetch="intent" to="/education">
+                Education
+              </NavLink>
+            </li>
+            <li>
+              <NavLink prefetch="intent" to="/contact">
+                Contact
+              </NavLink>
+            </li>
+          </ul>
           <Link to="/">
             <BsGithub />
           </Link>
