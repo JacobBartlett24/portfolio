@@ -14,25 +14,42 @@ export const links: LinksFunction = () => {
 
 export default function Body() {
 
-  const [offset, setOffset] = useState(0);
+  const [animateClass, setAnimateClass] = useState('');
+  const [scrollPosition, setScrollPosition] = useState(0);
 
-  useEffect(() => {
-      const onScroll = () => setOffset(window.pageYOffset);
-      // clean up code
-      window.removeEventListener('scroll', onScroll);
-      window.addEventListener('scroll', onScroll, { passive: true });
-      document.body.style.setProperty('--scroll', (window.pageYOffset / (document.body.offsetHeight - window.innerHeight)).toString());
-      return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+      // if(offset > 230){
+      //   setAnimateClass('scrollBottom');
+      // }else{
+      //   setAnimateClass('');
+      // }
 
-  
+const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+};
+
+useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+    };
+}, []);
+
+useEffect(() => {
+  if(scrollPosition > 230){
+    setAnimateClass('scrollBottom');
+  }else{
+    setAnimateClass('');
+  }
+}, [scrollPosition]);
 
   return(
     <div className="body">
       <h1 className="portfolioTitle">Jacob Bartlett's <br /> Portfolio</h1>
       <div className="mainContent">
         <div id="imgHolder">
-          <img className={offset > 230 ? "scrollBottom" : ""}id="profilePicture"alt="me" src="https://cdn.midjourney.com/fe42195e-b152-49c1-b0ef-b9276f82874a/0_3.png" />
+          <img className={animateClass} id="profilePicture"alt="me" src="https://cdn.midjourney.com/fe42195e-b152-49c1-b0ef-b9276f82874a/0_3.png" />
           <p id="blurb">
             Web Development, Software Engineering, Design,<br/> and Data Science
           </p>

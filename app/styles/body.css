@@ -46,9 +46,6 @@
 #imgHolder #profilePicture {
   border-radius: 50%;
   width: 300px;
-  animation-play-state: paused;
-  animation: moveToBottom 2s forwards ease-in-out;
-  animation-delay: calc(var(--scroll) * -1s);
 }
 #imgHolder #profilePicture:hover {
   animation-play-state: running;
@@ -63,6 +60,52 @@
   }
 }
 
+.scrollBottom {
+  z-index: 100;
+  position: fixed;
+  animation: moveToCorner 4s ease-in-out forwards;
+}
+
+@keyframes moveToCorner {
+  0% {
+    top: 10%;
+    left: 50%;
+    width: 300px;
+  }
+  25% {
+    width: 100px;
+  }
+  50% {
+    top: 10%;
+    left: 20%;
+    width: 100px;
+  }
+  65% {
+    top: 85%;
+    left: 20%;
+    width: 100px;
+  }
+  70% {
+    top: 75%;
+    left: 20%;
+    width: 100px;
+  }
+  80% {
+    top: 85%;
+    left: 20%;
+    width: 100px;
+  }
+  90% {
+    top: 80%;
+    left: 20%;
+    width: 100px;
+  }
+  100% {
+    top: 85%;
+    left: 20%;
+    width: 100px;
+  }
+}
 .projectSpotlight {
   display: flex;
   justify-content: center;
@@ -115,7 +158,6 @@
 
 .tooltip {
   position: relative;
-  transition: display 0.25s;
 }
 .tooltip span {
   display: none;
