@@ -48,13 +48,13 @@ useEffect(() => {
     <div className="body">
       <h1 className="portfolioTitle">Jacob Bartlett's <br /> Portfolio</h1>
       <div className="mainContent">
-        <div id="imgHolder">
-          <img className={animateClass} id="profilePicture"alt="me" src="https://cdn.midjourney.com/fe42195e-b152-49c1-b0ef-b9276f82874a/0_3.png" />
-          <p id="blurb">
-            Web Development, Software Engineering, Design,<br/> and Data Science
-          </p>
+        <div className="imgHolder">
+            <img className={animateClass} id={animateClass ? "" : "profilePicture"}alt="me" src="https://cdn.midjourney.com/fe42195e-b152-49c1-b0ef-b9276f82874a/0_3.png" />
+            <p id="blurb" hidden={animateClass ? true : false}>
+              Web Development, Software Engineering, Design,<br/> and Data Science
+            </p>
         </div>
-        <h2>Main Tools</h2>
+        <h2 id="Tools">Main Tools</h2>
         <div className="tools">
           <div className="tooltip">
             <FaReact size="300px" color="#61DBFB"/>
@@ -77,7 +77,7 @@ useEffect(() => {
             <span>Python</span>
           </div>
         </div>
-        <h2>Project I'm Most Proud Of</h2>
+        <h2 id="Project">Project I'm Most Proud Of</h2>
         <div className="projectSpotlight">
           <div id="projectWrapper">
             <img alt="Albumdle" src={albumdleImg} />

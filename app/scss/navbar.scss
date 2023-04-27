@@ -4,26 +4,22 @@
   width: 95%;
   border-right: $borderblack;
   background-color: $black;
-  .sections{
-    list-style: none;
-    line-height: 3rem;
+  .navSections{
     margin: 0;
     position: fixed;
     top: 100px;
+    display: flex;
+    flex-direction: column;
     z-index: 0;
-  }
-  li{
-    transition: color .25s;
-    width: fit-content;
-    padding: 5px;
-    border-radius: 15px;
-  }
-  li:hover{
-    color: $textHoverColor;
   }
   a{
     text-decoration: none;
-    color: $textColor
+    color: $textColor;
+    transition: color .25s;
+    margin-bottom: 20px;
+    &:hover{
+      color: $textHoverColor;
+    }
   }
   .active{
     color: $textHoverColor;

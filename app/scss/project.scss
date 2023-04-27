@@ -32,12 +32,25 @@
   box-shadow: $boxShadowBlack;
   text-decoration: none;
   color: $textColor;
+  gap: 20px;
 
   #projectTitle{
     grid-column: 1/3;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: $obviousborderblack;
+    
+  }
+
+  .navWrap{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-bottom: $obviousborderblack;
   }
   
   .projectsNav{

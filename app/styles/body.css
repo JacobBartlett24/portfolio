@@ -31,23 +31,23 @@
   margin: 0 0 5rem 0;
 }
 
-#imgHolder {
+.imgHolder {
   margin: 5rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-#imgHolder #blurb {
+.imgHolder #blurb {
   color: rgba(235, 235, 235, 0.87);
   font-style: italic;
   text-align: center;
 }
-#imgHolder #profilePicture {
+.imgHolder #profilePicture {
   border-radius: 50%;
   width: 300px;
 }
-#imgHolder #profilePicture:hover {
+.imgHolder #profilePicture:hover {
   animation-play-state: running;
   animation: spin 5s linear infinite;
 }
@@ -63,6 +63,7 @@
 .scrollBottom {
   z-index: 100;
   position: fixed;
+  border-radius: 50%;
   animation: moveToCorner 4s ease-in-out forwards;
 }
 
