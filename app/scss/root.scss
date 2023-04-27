@@ -6,8 +6,6 @@ body{
  box-sizing: border-box;
 }
 
-
-
 h1{
   margin: 0;
   font-size: 72px;
@@ -34,4 +32,8 @@ h1{
 ::-webkit-scrollbar-thumb {
   border-radius: 8px;
   background-color: $textHoverColor;
+}
+
+.active{
+  color: $textHoverColor;
 }

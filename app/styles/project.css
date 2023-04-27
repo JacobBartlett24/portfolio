@@ -10,7 +10,7 @@
 }
 
 .projectContainer {
-  height: 78.5vh;
+  height: 78.6vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,11 +19,10 @@
 .projectBox {
   display: grid;
   grid-template-rows: 4rem 1fr;
-  grid-template-columns: 6rem 1fr;
+  grid-template-columns: 10rem 1fr;
   margin: 20px;
-  padding: 20px;
-  width: 500px;
-  height: 350px;
+  width: 700px;
+  height: 450px;
   background-color: #2f2f2f;
   transition: box-shadow 0.25s, height 0.25s, width 0.25s;
   border-radius: 30px;
@@ -41,16 +40,54 @@
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   align-items: center;
+  margin: 20px;
 }
 .projectBox .projectsNav a {
   text-decoration: none;
   color: rgba(235, 235, 235, 0.87);
+  transition: color 0.25s;
 }
+.projectBox .projectsNav a:hover {
+  color: #37DA96;
+}
+.projectBox .projectsNav .active {
+  color: #37DA96;
+}
+
+.projectBody {
+  height: 100%;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px 0 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 40px;
+  text-decoration: none;
+  transition: color 0.25s, background-color 0.25s;
+}
+.overlay:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(235, 235, 235, 0.87);
+  display: flex;
+}
+
 .projectImage {
-  height: 200px;
-  width: 99.8%;
-  border-radius: 30px 30px 0 0;
-  border: 1px solid rgba(48, 48, 48, 0.5);
+  height: 100%;
+  width: 100%;
+  border-radius: 30px 0 30px 0;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07), 0 1px 4px rgba(0, 0, 0, 0.07);
 }
 
 .projectName {
@@ -70,6 +107,12 @@
   font-weight: 400;
   margin: 0;
   padding: 0;
+}
+
+.projectDisplay {
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 .projectTools {

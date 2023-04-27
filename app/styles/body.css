@@ -83,7 +83,7 @@
 .projectSpotlight .projectTools * {
   margin-right: 10px;
 }
-.projectSpotlight #overlay {
+.projectSpotlight .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -99,7 +99,7 @@
   text-decoration: none;
   transition: color 0.25s, background-color 0.25s;
 }
-.projectSpotlight #overlay:hover {
+.projectSpotlight .overlay:hover {
   background-color: rgba(0, 0, 0, 0.8);
   color: rgba(235, 235, 235, 0.87);
   display: flex;

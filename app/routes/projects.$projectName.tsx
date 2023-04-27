@@ -1,5 +1,5 @@
 import { LoaderArgs, json } from "@remix-run/node";
-import { useLoaderData } from "@remix-run/react";
+import { Link, useLoaderData } from "@remix-run/react";
 import data from "~/data/projects.json"
 
 import type { Project } from "./projects";
@@ -18,8 +18,11 @@ export default function Projects() {
   const project: Project = data.project;
   return (
     <>
-      <div className="">
-
+      <div className="projectDisplay">
+        <img className="projectImage" src={project.image} alt={project.name} />
+        <Link className="overlay" to={project.url}>
+          <p>Description: {project.description}<br/><br/> Tools: {project.tools}</p>
+        </Link>
       </div>
     </>
   );

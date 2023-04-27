@@ -1,10 +1,10 @@
 import type { LinksFunction } from '@remix-run/node';
 import styles from '~/styles/project.css'
 import data from '../data/projects.json'
-import { Link, Outlet } from '@remix-run/react';
+import { Link, NavLink, Outlet } from '@remix-run/react';
 import { useState } from 'react';
 
-type Project = {
+export type Project = {
   name: string,
   tools: string,
   description: string,
@@ -31,11 +31,11 @@ export default function Projects(){
           <div className='projectsNav'>
             {projects.map((project, index) => {
               return(
-                <Link key={index} to={`${project.name}`}>
+                <NavLink key={index} to={`${project.name}`}>
                   <div onClick={() => setTitle(project.name)} className='projectNav'>
                     {project.name}
                   </div>
-                </Link>
+                </NavLink>
               )
             })}
           </div>
