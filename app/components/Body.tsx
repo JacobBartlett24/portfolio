@@ -39,11 +39,26 @@ export default function Body() {
         </div>
         <h2>Main Tools</h2>
         <div className="tools">
-          <FaReact size="300px" color="#61DBFB"/>
-          <SiRemix size="250px" color="rgba(235,235,235,0.87)" />
-          <IoLogoJavascript size="300px" color="yellow" />
-          <SiTypescript size="300px" color="#007acc" />
-          <FaPython size="300px" color="#37DA96"/>
+          <div className="tooltip">
+            <FaReact size="300px" color="#61DBFB"/>
+            <span>React</span>
+          </div>
+          <div className="tooltip">
+            <SiRemix size="250px" color="rgba(235,235,235,0.87)" />
+            <span>Remix</span>
+          </div>
+          <div className="tooltip">
+            <IoLogoJavascript size="300px" color="yellow" />
+            <span>Javscript</span>
+          </div>
+          <div className="tooltip">
+            <SiTypescript size="300px" color="#007acc" />
+            <span>TypeScript</span>
+          </div>
+          <div className="tooltip">
+            <FaPython size="300px" color="#37DA96"/>
+            <span>Python</span>
+          </div>
         </div>
         <h2>Project I'm Most Proud Of</h2>
         <div className="projectSpotlight">

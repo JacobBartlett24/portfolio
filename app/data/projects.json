@@ -11,14 +11,14 @@
     "name": "Webscraping Website",
     "description": "A website that takes the weekly prices of Target's and Urban Outfitters products and displays them in a list.",
     "tools": "TypeScript, React, MongoDB, Remix, Chakra ui, and cron jobs",
-    "image": "https://cdn.midjourney.com/ec168cd6-4e22-4a37-b384-53e33168c4ad/0_3.png",
+    "image": "https://cdn.midjourney.com/08c4b82a-b38b-487a-819b-cc1af88f2246/0_1.png",
     "url": "https://webscraping-app.vercel.app/"
   },
   {
     "name": "Spotify Stats Game",
     "description": "A website that takes your top 100 songs and creates a game of guessing which song is deemed more popular.",
     "tools": "JavaScript, React, Node.js, Chakra ui, and the Spotify API.",
-    "image": "https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Green.png",
+    "image": "https://cdn.midjourney.com/4176b602-c3a2-4131-855c-c81d2f80cbe6/0_0.png",
     "url": "https://github.com/JacobBartlett24/SpotifyStatsGame"
   },
   {

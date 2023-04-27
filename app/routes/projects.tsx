@@ -31,7 +31,7 @@ export default function Projects(){
           <div className='projectsNav'>
             {projects.map((project, index) => {
               return(
-                <NavLink key={index} to={`${project.name}`}>
+                <NavLink className={""} key={index} to={`${project.name}`}>
                   <div onClick={() => setTitle(project.name)} className='projectNav'>
                     {project.name}
                   </div>

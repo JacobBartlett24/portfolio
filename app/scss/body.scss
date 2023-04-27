@@ -122,3 +122,22 @@
     height: 550px;
   }
 }
+
+.tooltip{
+  position: relative;
+  transition: display .25s;
+  span{
+    
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: $textColor;
+    padding: 5px;
+    
+  }
+  &:hover span{
+    display: block;
+  }
+}
