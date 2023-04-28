@@ -12,6 +12,19 @@
   top: 0;
   z-index: 1;
 }
+@media (max-width: 1000px) {
+  .header {
+    grid-template-columns: 1fr 65vw 1fr;
+  }
+}
+.header .hamburgerMenu {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .header .hamburgerMenu {
+    display: flex;
+  }
+}
 .header #title {
   display: flex;
   justify-content: center;
@@ -48,6 +61,11 @@
   align-items: center;
   margin: 0;
   padding: 0;
+}
+@media (max-width: 1000px) {
+  .header .icons ul {
+    display: none;
+  }
 }
 .header .icons ul a {
   text-decoration: none;

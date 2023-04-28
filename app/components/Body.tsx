@@ -50,6 +50,7 @@ useEffect(() => {
       <div className="mainContent">
         <div className="imgHolder">
             <img className={animateClass} id={animateClass ? "" : "profilePicture"}alt="me" src="https://cdn.midjourney.com/fe42195e-b152-49c1-b0ef-b9276f82874a/0_3.png" />
+            {/* <span className={animateClass == "" ? "" : "circlePlaceholder"}>asd</span> */}
             <p id="blurb" hidden={animateClass ? true : false}>
               Web Development, Software Engineering, Design,<br/> and Data Science
             </p>

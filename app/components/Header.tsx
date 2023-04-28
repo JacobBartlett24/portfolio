@@ -11,7 +11,7 @@ export default function Header(){
   return(
     <>
       <div className="header">
-        
+          <div className="hamburgerMenu">ham</div>
           <Link id="title" to="/">Portfolio</Link>
         
           <span className="icons">
