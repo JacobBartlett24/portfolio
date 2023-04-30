@@ -4,6 +4,12 @@
   width: 95%;
   border-right: $borderblack;
   background-color: $black;
+
+  @media(max-width: $width-breakpoint) {
+
+    display: none;
+  }
+
   .navSections{
     margin: 0;
     position: fixed;

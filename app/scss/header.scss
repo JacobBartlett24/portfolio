@@ -14,7 +14,7 @@
   top: 0;
   z-index: 1;
   @media (max-width: $width-breakpoint){
-    grid-template-columns: 1fr 65vw 1fr;
+    grid-template-columns: 20vw 60vw 20vw;
   }
 
   .hamburgerMenu{
@@ -94,4 +94,9 @@
   grid-template-columns: 15vw calc(85vw - 40px);
   padding: 40px;
   background-color: $black;
+  @media (max-width: $width-breakpoint) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }

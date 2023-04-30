@@ -14,7 +14,7 @@
 }
 @media (max-width: 1000px) {
   .header {
-    grid-template-columns: 1fr 65vw 1fr;
+    grid-template-columns: 20vw 60vw 20vw;
   }
 }
 .header .hamburgerMenu {
@@ -89,6 +89,13 @@
   grid-template-columns: 15vw calc(85vw - 40px);
   padding: 40px;
   background-color: #1a1a1a;
+}
+@media (max-width: 1000px) {
+  .mainGrid {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */
