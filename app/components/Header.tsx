@@ -2,6 +2,7 @@ import type { LinksFunction } from "@remix-run/node";
 import styles from "../styles/header.css";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { Link, NavLink } from "@remix-run/react";
+import { FaHamburger } from "react-icons/fa";
 
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: styles }];
@@ -11,7 +12,35 @@ export default function Header(){
   return(
     <>
       <div className="header">
-          <div className="hamburgerMenu">ham</div>
+          <div className="menuWrapper">
+            <button className="hamburgerMenu">
+              <FaHamburger />
+              <div className="dropDown">
+                <ul>
+                  <li>
+                    <Link prefetch="intent" to={"/resume"}>
+                      Resume
+                    </Link>
+                  </li>
+                  <li>
+                    <Link prefetch="intent" to="/projects">
+                      Projects
+                    </Link>
+                  </li>
+                  <li>
+                    <Link prefetch="intent" to="/education">
+                      Education
+                    </Link>
+                  </li>
+                  <li>
+                    <Link prefetch="intent" to="/contact">
+                      Contact
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </button>
+          </div>
           <Link id="title" to="/">Portfolio</Link>
         
           <span className="icons">

@@ -24,8 +24,6 @@
   flex-direction: column;
 }
 
-
-
 .tools{
   display: grid;
   grid-template-rows: repeat(2, 300px);
@@ -182,8 +180,8 @@
   width: 300px;
   height: 300px;
   @media (max-width: $width-breakpoint){
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -207,7 +205,9 @@
       margin-right: 10px;
       size: 2px;
     }
-    
+    @media (max-width: $width-breakpoint){
+      margin-bottom: 5rem;
+    }
   } 
 
   .overlay{
@@ -230,11 +230,17 @@
       color: $textColor;
       display: flex;
     }
+    @media (max-width: $width-breakpoint){
+      display: none;
+    }
   }
   img{
     border-radius: 15px;
     height: 500px;
     transition: height .25s;
+    @media (max-width: $width-breakpoint){
+      height: 130px;
+    }
   }
   img:hover{
     height: 550px;

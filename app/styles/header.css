@@ -2,7 +2,7 @@
   height: 60px;
   background-color: #1a1a1a;
   display: grid;
-  grid-template-columns: 15vw 1fr;
+  grid-template-columns: 20vw 40vw 39vw;
   align-items: center;
   justify-content: center;
   align-content: center;
@@ -17,23 +17,55 @@
     grid-template-columns: 20vw 60vw 20vw;
   }
 }
-.header .hamburgerMenu {
-  display: none;
+.header .menuWrapper {
+  position: relative;
+}
+.header .menuWrapper .hamburgerMenu {
+  background: none;
+  color: rgba(235, 235, 235, 0.7);
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  display: flex;
+  padding: 10px;
+  size: 20px;
 }
 @media (max-width: 1000px) {
-  .header .hamburgerMenu {
+  .header .menuWrapper .hamburgerMenu {
     display: flex;
   }
 }
+.header .menuWrapper .dropDown {
+  position: absolute;
+  border: 1px solid black;
+  top: 50px;
+  display: none;
+  height: 150px;
+  width: 150px;
+  background-color: black;
+}
+.header .menuWrapper .dropDown ul {
+  list-style: none;
+}
+.header .menuWrapper .dropDown a {
+  text-decoration: none;
+}
 .header #title {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   font-size: 1.5rem;
   font-weight: 500;
   text-decoration: none;
   color: rgba(235, 235, 235, 0.87);
   transition: color 0.25s;
+}
+@media (max-width: 1000px) {
+  .header #title {
+    justify-content: center;
+  }
 }
 .header #title:hover {
   color: #37DA96;
