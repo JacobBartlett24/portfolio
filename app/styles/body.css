@@ -232,7 +232,8 @@
 }
 @media (max-width: 1000px) {
   .projectSpotlight .overlay {
-    display: none;
+    height: 130px;
+    font-size: 1rem;
   }
 }
 .projectSpotlight img {
@@ -244,9 +245,6 @@
   .projectSpotlight img {
     height: 130px;
   }
-}
-.projectSpotlight img:hover {
-  height: 550px;
 }
 
 .tooltip {

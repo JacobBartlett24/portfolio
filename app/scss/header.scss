@@ -4,7 +4,7 @@
   height: 60px;
   background-color: $black;
   display: grid;
-  grid-template-columns: 20vw 40vw 39vw;
+  grid-template-columns: 15vw 1fr;
   align-items: center;
   justify-content: center;
   align-content: center;
@@ -19,6 +19,10 @@
 
   .menuWrapper{
     position: relative;
+    display: none;
+    @media (max-width: $width-breakpoint){
+      display: block;
+    }
     .hamburgerMenu{
       background: none;
       color: $iconColor;
@@ -36,21 +40,50 @@
     }
     .dropDown{
       position: absolute;
-      border: 1px solid black;
       top: 50px;
       display: none;
-
-      // display: none;
       height: 150px;
       width: 150px;
-      background-color: black;
+      background-color: $secondaryBlack;
+      padding: 10px;
+      box-sizing: border-box;
       ul{
         list-style: none;
-        
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        li{
+          border-bottom: $obviousborderblack;
+          width: 100%;
+          padding: 5px;
+        }        
       }
       a{
+        color: $textColor;
         text-decoration: none;
+        transition: color .25s;
       }
+      a:hover{
+        color: $textHoverColor;;          
+      }
+    }
+    .active{
+      display: flex;
+      animation: displayBox .25s ;      
+    }
+  }
+
+  @keyframes displayBox {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
     }
   }
 

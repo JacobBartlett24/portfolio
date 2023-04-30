@@ -231,7 +231,8 @@
       display: flex;
     }
     @media (max-width: $width-breakpoint){
-      display: none;
+      height: 130px;
+      font-size: 1rem;
     }
   }
   img{
@@ -241,9 +242,6 @@
     @media (max-width: $width-breakpoint){
       height: 130px;
     }
-  }
-  img:hover{
-    height: 550px;
   }
 }
 
