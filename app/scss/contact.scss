@@ -40,10 +40,12 @@
   .cardBody{
     display: flex;
     justify-content: space-around;
-    flex-direction: column;
     align-items: center;
     font-size: 1rem;
     font-weight: 400;
+    @media (max-width: $width-breakpoint) {
+      flex-direction: column;
+    } 
   }
 
   .contactMethod{
