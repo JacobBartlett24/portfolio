@@ -1,4 +1,4 @@
-  @import "utilities";
+@import "utilities";
 
 .resumePage{
   display: flex;
@@ -12,6 +12,35 @@
   width: 690px;
   border-radius: 15px;
   box-shadow: $boxShadowBlack;
+  @media(max-width: $width-breakpoint){
+    display: none;
+  }
+}
+
+#resumeWrapper{
+  display: none;
+  @media(max-width: $width-breakpoint){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 77vh;
+  }
+  #downloadResumeButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: $secondaryBlack;
+    height: 3rem;
+    padding: 15px;
+    width: 10rem;
+    border-radius: 15px;
+    color: $textColor;
+	  border: $obviousborderblack;
+    box-shadow: $boxShadowBlack;
+  }
+  
 }
 
 #resumeTitle{

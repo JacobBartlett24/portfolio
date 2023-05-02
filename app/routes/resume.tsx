@@ -24,6 +24,9 @@ export default function Resume(){
             damping: 20
           }}
           >
+            <div id="resumeWrapper">
+            <a href={resume} id="downloadResumeButton" rel="noreferrer" target="_blank">Open Resume</a>
+            </div>
             <img src={resume} alt="resume" id="image" />
           </motion.div>
         </AnimatePresence>
