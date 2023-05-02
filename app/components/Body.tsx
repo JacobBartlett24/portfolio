@@ -7,21 +7,16 @@ import { SiChakraui, SiRemix, SiSupabase, SiTypescript } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { Link } from "@remix-run/react";
 import { useEffect, useState } from "react";
+import { IconContext } from "react-icons";
 
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: styles }];
 };
 
 export default function Body() {
-
+  const SCROLL_MAX_POS = 450;
   const [animateClass, setAnimateClass] = useState('');
   const [scrollPosition, setScrollPosition] = useState(0);
-
-      // if(offset > 230){
-      //   setAnimateClass('scrollBottom');
-      // }else{
-      //   setAnimateClass('');
-      // }
 
 const handleScroll = () => {
     const position = window.pageYOffset;
@@ -37,9 +32,9 @@ useEffect(() => {
 }, []);
 
 useEffect(() => {
-  if(scrollPosition > 230){
+  if(scrollPosition > SCROLL_MAX_POS){
     setAnimateClass('scrollBottom');
-  }else{
+  }else if(scrollPosition < 300){
     setAnimateClass('');
   }
 }, [scrollPosition]);
@@ -50,6 +45,7 @@ useEffect(() => {
       <div className="mainContent">
         <div className="imgHolder">
             <img className={animateClass} id={animateClass ? "" : "profilePicture"}alt="me" src="https://cdn.midjourney.com/fe42195e-b152-49c1-b0ef-b9276f82874a/0_3.png" />
+            <span className={animateClass == "" ? "" : "placeholder"} hidden={animateClass == "" ? true : false}>asd</span>
             <p id="blurb" hidden={animateClass ? true : false}>
               Web Development, Software Engineering, Design,<br/> and Data Science
             </p>
@@ -57,23 +53,33 @@ useEffect(() => {
         <h2 id="Tools">Main Tools</h2>
         <div className="tools">
           <div className="tooltip">
-            <FaReact size="300px" color="#61DBFB"/>
+          <IconContext.Provider value={{className: 'icon'}}>
+            <FaReact  color="#61DBFB"/>
+          </IconContext.Provider>
             <span>React</span>
           </div>
           <div className="tooltip">
-            <SiRemix size="250px" color="rgba(235,235,235,0.87)" />
+            <IconContext.Provider value={{className: 'icon'}}>
+              <SiRemix color="rgba(235,235,235,0.87)" />
+            </IconContext.Provider>
             <span>Remix</span>
           </div>
           <div className="tooltip">
-            <IoLogoJavascript size="300px" color="yellow" />
+          <IconContext.Provider value={{className: 'icon'}}>
+            <IoLogoJavascript color="yellow" />
+          </IconContext.Provider>
             <span>Javscript</span>
           </div>
           <div className="tooltip">
+          <IconContext.Provider value={{className: 'icon'}}>
             <SiTypescript size="300px" color="#007acc" />
+          </IconContext.Provider>
             <span>TypeScript</span>
           </div>
           <div className="tooltip">
+          <IconContext.Provider value={{className: 'icon'}}>
             <FaPython size="300px" color="#37DA96"/>
+          </IconContext.Provider>
             <span>Python</span>
           </div>
         </div>

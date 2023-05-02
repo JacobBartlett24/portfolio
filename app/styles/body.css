@@ -12,6 +12,11 @@
   font-size: 3rem;
   text-align: center;
 }
+@media (max-width: 1000px) {
+  .portfolioTitle {
+    font-size: 2.5rem;
+  }
+}
 
 .mainContent {
   display: flex;
@@ -28,7 +33,12 @@
   justify-content: center;
   justify-items: center;
   gap: 40px 20px;
-  margin: 0 0 5rem 0;
+  margin: 2rem 0;
+}
+@media (max-width: 1000px) {
+  .tools {
+    grid-template-rows: repeat(2, 150px);
+  }
 }
 
 .imgHolder {
@@ -38,6 +48,16 @@
   justify-content: center;
   flex-direction: column;
 }
+.imgHolder .placeholder {
+  border-radius: 50%;
+  width: 300px;
+  margin-bottom: 10rem;
+}
+@media (max-width: 1000px) {
+  .imgHolder .placeholder {
+    width: 200px;
+  }
+}
 .imgHolder #blurb {
   color: rgba(235, 235, 235, 0.87);
   font-style: italic;
@@ -46,6 +66,11 @@
 .imgHolder #profilePicture {
   border-radius: 50%;
   width: 300px;
+}
+@media (max-width: 1000px) {
+  .imgHolder #profilePicture {
+    width: 200px;
+  }
 }
 .imgHolder #profilePicture:hover {
   animation-play-state: running;
@@ -65,6 +90,11 @@
   position: fixed;
   border-radius: 50%;
   animation: moveToCorner 4s ease-in-out forwards;
+}
+@media (max-width: 1000px) {
+  .scrollBottom {
+    animation: moveToCornerMobile 4s ease-in-out forwards;
+  }
 }
 
 @keyframes moveToCorner {
@@ -107,6 +137,52 @@
     width: 100px;
   }
 }
+@keyframes moveToCornerMobile {
+  0% {
+    top: 10%;
+    left: 50%;
+    width: 300px;
+  }
+  25% {
+    width: 75px;
+  }
+  50% {
+    top: 10%;
+    left: 6%;
+  }
+  65% {
+    top: 85%;
+    left: 6%;
+  }
+  70% {
+    top: 75%;
+    left: 6%;
+  }
+  80% {
+    top: 85%;
+    left: 6%;
+  }
+  90% {
+    top: 80%;
+    left: 6%;
+  }
+  100% {
+    top: 85%;
+    left: 6%;
+    width: 75px;
+  }
+}
+.icon {
+  width: 300px;
+  height: 300px;
+}
+@media (max-width: 1000px) {
+  .icon {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 .projectSpotlight {
   display: flex;
   justify-content: center;
@@ -126,6 +202,12 @@
 }
 .projectSpotlight .projectTools * {
   margin-right: 10px;
+  size: 2px;
+}
+@media (max-width: 1000px) {
+  .projectSpotlight .projectTools {
+    margin-bottom: 5rem;
+  }
 }
 .projectSpotlight .overlay {
   position: absolute;
@@ -148,13 +230,21 @@
   color: rgba(235, 235, 235, 0.87);
   display: flex;
 }
+@media (max-width: 1000px) {
+  .projectSpotlight .overlay {
+    height: 130px;
+    font-size: 1rem;
+  }
+}
 .projectSpotlight img {
   border-radius: 15px;
   height: 500px;
   transition: height 0.25s;
 }
-.projectSpotlight img:hover {
-  height: 550px;
+@media (max-width: 1000px) {
+  .projectSpotlight img {
+    height: 130px;
+  }
 }
 
 .tooltip {

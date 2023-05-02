@@ -12,15 +12,96 @@
   top: 0;
   z-index: 1;
 }
+@media (max-width: 1000px) {
+  .header {
+    grid-template-columns: 20vw 60vw 20vw;
+  }
+}
+.header .menuWrapper {
+  position: relative;
+  display: none;
+}
+@media (max-width: 1000px) {
+  .header .menuWrapper {
+    display: block;
+  }
+}
+.header .menuWrapper .hamburgerMenu {
+  background: none;
+  color: rgba(235, 235, 235, 0.7);
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  display: flex;
+  padding: 10px 10px 10px 30px;
+  size: 20px;
+}
+@media (max-width: 1000px) {
+  .header .menuWrapper .hamburgerMenu {
+    display: flex;
+  }
+}
+.header .menuWrapper .dropDown {
+  position: absolute;
+  top: 50px;
+  display: none;
+  height: 150px;
+  width: 150px;
+  background-color: #2f2f2f;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.header .menuWrapper .dropDown ul {
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.header .menuWrapper .dropDown ul li {
+  border-bottom: 1px solid rgba(200, 200, 200, 0.1);
+  width: 100%;
+  padding: 5px;
+}
+.header .menuWrapper .dropDown a {
+  color: rgba(235, 235, 235, 0.87);
+  text-decoration: none;
+  transition: color 0.25s;
+}
+.header .menuWrapper .dropDown a:hover {
+  color: #37DA96;
+}
+.header .menuWrapper .active {
+  display: flex;
+  animation: displayBox 0.25s;
+}
+@keyframes displayBox {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .header #title {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   font-size: 1.5rem;
   font-weight: 500;
   text-decoration: none;
   color: rgba(235, 235, 235, 0.87);
   transition: color 0.25s;
+}
+@media (max-width: 1000px) {
+  .header #title {
+    justify-content: center;
+  }
 }
 .header #title:hover {
   color: #37DA96;
@@ -49,6 +130,11 @@
   margin: 0;
   padding: 0;
 }
+@media (max-width: 1000px) {
+  .header .icons ul {
+    display: none;
+  }
+}
 .header .icons ul a {
   text-decoration: none;
   color: rgba(235, 235, 235, 0.87);
@@ -71,6 +157,13 @@
   grid-template-columns: 15vw calc(85vw - 40px);
   padding: 40px;
   background-color: #1a1a1a;
+}
+@media (max-width: 1000px) {
+  .mainGrid {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */
