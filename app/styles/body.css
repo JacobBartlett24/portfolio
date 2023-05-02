@@ -285,6 +285,7 @@
   display: flex;
   flex-direction: row;
   width: 100%;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07), 0 1px 4px rgba(0, 0, 0, 0.07);
 }
 .otherProjects .bottom #left2 {
   width: 60%;
@@ -295,6 +296,7 @@
 .otherProjects img {
   height: 100%;
   width: 100%;
+  border-radius: 15px;
 }
 
 /*# sourceMappingURL=body.css.map */
