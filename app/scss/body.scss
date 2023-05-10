@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 100px;  
+  padding: 0;  
 }
 
 .portfolioTitle{
@@ -22,6 +22,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .tools{
@@ -46,6 +47,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
+  background-color: red;
 
   .placeholder{
     border-radius: 50%;
