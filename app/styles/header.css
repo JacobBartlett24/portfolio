@@ -153,7 +153,7 @@
 
 .mainGrid {
   display: grid;
-  overflow-x: hidden;
+  overflow: hidden;
   grid-template-columns: 15vw calc(85vw - 40px);
   padding: 40px;
   background-color: #1a1a1a;

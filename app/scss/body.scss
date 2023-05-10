@@ -101,6 +101,9 @@
   @media (max-width: $width-breakpoint) {
     animation: moveToCornerMobile 4s ease-in-out forwards;
   }
+  img:hover{
+    box-shadow: $boxShadowBlack;
+  }
 }
 
 @keyframes moveToCorner{
