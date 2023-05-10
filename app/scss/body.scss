@@ -54,6 +54,7 @@
     @media (max-width: $width-breakpoint) {
       width: 200px;
   }
+  
 }
 
   #blurb{
@@ -85,6 +86,10 @@
       transform: rotatey(360deg);
     }
   }
+}
+
+.changeColor{
+  color: $black !important
 }
 
 

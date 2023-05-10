@@ -85,6 +85,10 @@
   }
 }
 
+.changeColor {
+  color: #1a1a1a !important;
+}
+
 .scrollBottom {
   z-index: 100;
   position: fixed;
