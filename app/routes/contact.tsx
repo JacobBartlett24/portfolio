@@ -3,6 +3,7 @@ import styles from "~/styles/contact.css"
 import {BsMailbox, BsLinkedin, BsGithub, BsFillPinMapFill, BsPhone} from "react-icons/bs"
 import { Link } from "@remix-run/react";
 import { AnimatePresence, motion } from "framer-motion";
+
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: styles }]
 };

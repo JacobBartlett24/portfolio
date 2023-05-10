@@ -1,6 +1,10 @@
 body {
   margin: 0;
   font-family: "InterTight", sans-serif;
+  overflow-x: hidden;
+}
+
+* {
   box-sizing: border-box;
 }
 
@@ -17,7 +21,7 @@ h1 {
   src: url(../../public/InterTight-VariableFont_wght.ttf) format("truetype");
 }
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 4px;
   border-radius: 8px;
 }
 
@@ -27,8 +31,8 @@ h1 {
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 8px;
-  background-color: #37DA96;
+  border-radius: 2px;
+  background-color: #2f2f2f;
 }
 
 .active {
