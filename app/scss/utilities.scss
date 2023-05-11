@@ -12,3 +12,4 @@ $textHoverBackgroundColor: rgba(255, 255, 255, 0.1);
 $secondaryBlack: #2f2f2f;
 $width-breakpoint: 1000px;
 $pageHeight: calc(100vh - 60px);
+$opaqueSecondayBlack: linear-gradient(to bottom, $secondaryBlack 0%, rgba(47, 47, 47, 0) 90%);

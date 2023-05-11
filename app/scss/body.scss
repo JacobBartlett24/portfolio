@@ -323,4 +323,37 @@
   }
 }
 
+.contactWrapper{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  .contactCard{
+    height: 600px;
+    width: 400px;
+    background-image: $opaqueSecondayBlack;
+    opacity: 1;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
+#Contact{
+  margin-top: 14rem;
+  margin-bottom: 6rem;
+}
+
+.iconSmall{
+  width: 150px;
+  height: 150px;
+  scale: 1;
+  transition: .25s scale;
+  @media (max-width: $width-breakpoint){
+    width: 100px;
+    height: 100px;
+  }
+  &:hover{
+    scale: 1.3;
+  }
+}
