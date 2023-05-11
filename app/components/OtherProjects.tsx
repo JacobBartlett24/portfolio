@@ -23,7 +23,7 @@ export default function OtherProjects(){
 
   return(
     <>
-      <h2 id="OtherProjects">Other Projects</h2>
+      <h2 id="OtherProjects" className="sectionTitle">Other Projects</h2>
       <div className="otherProjects">
         <Slides />
         <Slides />

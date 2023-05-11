@@ -5,7 +5,7 @@ import {RxDiscordLogo} from "react-icons/rx";
 export default function Contact() {
   return (
     <>
-    <h2 id="Contact">Contact</h2>
+    <h2 id="Contact" className="sectionTitle">Contact</h2>
     <div className="contactWrapper">
       <div className="contactCard">
           <IconContext.Provider value={{className: 'iconSmall'}}>
