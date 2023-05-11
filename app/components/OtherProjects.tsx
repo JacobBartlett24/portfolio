@@ -1,27 +1,33 @@
 import data from '../data/projects.json'
+import {Link} from '@remix-run/react'
+export function Slides(){
+  return(
+    <div className="firstSlide">
+      <Link to={data.projects[1].url}>
+        <img src={data.projects[1].image} alt="" />
+      </Link>
+      <Link to={data.projects[2].url}>
+        <img src={data.projects[2].image} alt="" />
+      </Link>
+      <Link to={data.projects[0].url}>
+        <img src={data.projects[0].image} alt="" />
+      </Link>
+      <Link to={data.projects[3].url}>
+        <img src={data.projects[3].image} alt="" />
+      </Link>
+    </div>
+  )
+}
 
 export default function OtherProjects(){
 
   return(
     <>
-      <h2 id="OtherProjects">Other Projects</h2>
+      <h2 id="OtherProjects" className="sectionTitle">Other Projects</h2>
       <div className="otherProjects">
-        <div className="top">
-          <div className="projectTile" id="left1">
-            <img src={data.projects[1].image} alt="" />
-          </div>
-          <div className="projectTile" id="right1">
-          <img src={data.projects[2].image} alt="" />
-          </div>
-        </div>
-        <div className="bottom">
-          <div className="projectTile" id="left2">
-            <img src={data.projects[0].image} alt="" />
-          </div>
-          <div className="projectTile" id="right2">
-            <img src={data.projects[3].image} alt="" />
-          </div>
-        </div>
+        <Slides />
+        <Slides />
+        <Slides />
       </div>
     </>
   )

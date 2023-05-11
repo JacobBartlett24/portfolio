@@ -6,7 +6,7 @@ import albumdleImg from "../../public/albumdle.png";
 export default function ProjectSpotlight(){
   return(
     <>
-    <h2 id="Project">Project I'm Most Proud Of</h2>
+    <h2 id="Project" className="sectionTitle">Project I'm Most Proud Of</h2>
     <div className="projectSpotlight">
       <div id="projectWrapper">
         <img alt="Albumdle" src={albumdleImg} />

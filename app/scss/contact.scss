@@ -2,11 +2,10 @@
 
 .contactPage{
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   color: $textColor;
-  height: 84.9vh;
+  height: $pageHeight;
 }
 
 #title{

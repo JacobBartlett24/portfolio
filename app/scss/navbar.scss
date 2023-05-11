@@ -4,6 +4,9 @@
   width: 100%;
   border-right: $borderblack;
   background-color: $black;
+  position: relative;
+  z-index: 7;
+  padding: 2rem;
 
   @media(max-width: $width-breakpoint) {
 
@@ -16,7 +19,7 @@
     top: 100px;
     display: flex;
     flex-direction: column;
-    z-index: 0;
+    z-index: 8;
   }
   a{
     text-decoration: none;

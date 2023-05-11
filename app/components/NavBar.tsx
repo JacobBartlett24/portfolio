@@ -6,6 +6,8 @@ export default function NavBar(){
       <div className="navSections">
         <a href="#Tools">Tools</a>
         <a href="#Project">Project</a>
+        <a href="#OtherProjects">Other Projects</a>
+        <a href="#Contact">Contact</a>
       </div>
     </div>
   )

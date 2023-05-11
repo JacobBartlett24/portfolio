@@ -6,7 +6,7 @@ import { SiRemix, SiTypescript } from "react-icons/si";
 export default function Tools(){
   return(
     <>
-    <h2 id="Tools">Main Tools</h2>
+    <h2 id="Tools" className="sectionTitle">Main Tools</h2>
     <div className="tools">
       <div className="tooltip">
       <IconContext.Provider value={{className: 'icon'}}>

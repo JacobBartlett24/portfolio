@@ -11,6 +11,7 @@ import ProjectSpotlight from "./ProjectSpotlight";
 import Tools from "./Tools";
 import ProfilePicture from "./ProfilePicture";
 import OtherProjects from "./OtherProjects";
+import Contact from "./Contact";
 
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: styles }];
@@ -49,7 +50,8 @@ useEffect(() => {
         <ProfilePicture  animateClass={animateClass}/>
         <Tools />
         <ProjectSpotlight />
-        <OtherProjects />       
+        <OtherProjects />
+        <Contact />     
       </div>
     </div>
   )
