@@ -287,16 +287,14 @@
   white-space: nowrap;
   &:hover .firstSlide{
     animation-play-state: paused;
-
   }
   img{
     height: 400px;
     width: 600px;
     border-radius: 15px;
-    margin: 0 4rem 0 0;
+    margin: 0 6rem 0 0;
     transition: .25s box-shadow;
-    position: relative;
-    transform: rotateY(18.5deg);
+    
   }
   img:hover{
     box-shadow: 0 0 10px 5px $secondaryBlack;
@@ -305,8 +303,14 @@
     animation: 30s slide infinite linear;
     display: flex;
     flex-direction: row;
+    position: relative;
   }
-
+  .firstSlide a:nth-child(2n){
+    rotate: 5deg;
+  }
+  .firstSlide a:nth-child(2n - 1){
+    rotate: -5deg;
+  }
   
 
 }
