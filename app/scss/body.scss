@@ -294,7 +294,12 @@
     width: 600px;
     border-radius: 15px;
     margin: 0 4rem 0 0;
-    transition: .25s width, .25s height;
+    transition: .25s box-shadow;
+    position: relative;
+    transform: rotateY(18.5deg);
+  }
+  img:hover{
+    box-shadow: 0 0 10px 5px $secondaryBlack;
   }
   .firstSlide{
     animation: 30s slide infinite linear;
