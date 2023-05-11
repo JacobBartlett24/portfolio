@@ -281,79 +281,27 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   align-items: center;
-  position: relative;
+  
+  white-space: nowrap;
   img{
     height: 400px;
     width: 600px;
     border-radius: 15px;
-    position: absolute;
-    z-index: -4;
+    margin: 0 4rem 0 0;
   }
-  #firstPic{
-    left: 0px;
-    animation-name: slide1;
-    animation-duration: 16s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
-  #secondPic{
-    left: 700px;
-    // animation-name: slide2;
-    // animation-duration: 16s;
-    // animation-timing-function: linear;
-    // animation-iteration-count: infinite;
-  }
-  #thirdPic{
-    // animation-name: slide3;
-    // animation-duration: 16s;
-    // animation-timing-function: linear;
-    // animation-iteration-count: infinite;
-    left: 1400px;
-  }
-  #fourthPic{
-    // animation-name: slide4;
-    // animation-duration: 16s;
-    // animation-timing-function: linear;
-    // animation-iteration-count: infinite;
-    left: 2100px;
+  .firstSlide{
+    animation: 10s slide infinite linear;
+    display: flex;
+    flex-direction: row;
   }
 }
 
-@keyframes slide1{
-  0%{
-    left: 0px;
-  }
-  50%{
-    left: -700px;
-  }
-  100%{
-    left: 2000px;
-  }
-}
-@keyframes slide2{
+@keyframes slide{
   from{
-    left: 1400px;
-  }
-  to{
-    left: -1300px;
-  }
-}
-@keyframes slide3{
-  from{
-    left: 2000px;
-  }
-  to{
-    left: -600px;
-  }
-}
-@keyframes slide4{
-  from{
-    left: 2000px;
-  }
-  to{
-    left: -600px;
+    transform: translateX(0);
+  }to{
+    transform: translateX(-100%);
   }
 }
 
