@@ -2,6 +2,8 @@
   width: 100%;
   border-right: 1px solid rgba(48, 48, 48, 0.5);
   background-color: #1a1a1a;
+  position: relative;
+  z-index: 7;
 }
 @media (max-width: 1000px) {
   .navBar {
@@ -14,7 +16,7 @@
   top: 100px;
   display: flex;
   flex-direction: column;
-  z-index: 0;
+  z-index: 8;
 }
 .navBar a {
   text-decoration: none;

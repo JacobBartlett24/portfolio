@@ -6,22 +6,10 @@ export default function OtherProjects(){
     <>
       <h2 id="OtherProjects">Other Projects</h2>
       <div className="otherProjects">
-        <div className="top">
-          <div className="projectTile" id="left1">
-            <img src={data.projects[1].image} alt="" />
-          </div>
-          <div className="projectTile" id="right1">
-          <img src={data.projects[2].image} alt="" />
-          </div>
-        </div>
-        <div className="bottom">
-          <div className="projectTile" id="left2">
-            <img src={data.projects[0].image} alt="" />
-          </div>
-          <div className="projectTile" id="right2">
-            <img src={data.projects[3].image} alt="" />
-          </div>
-        </div>
+        <img id="firstPic"  src={data.projects[1].image} alt="" />
+        <img id="secondPic"  src={data.projects[2].image} alt="" />
+        <img id="thirdPic"  src={data.projects[0].image} alt="" />
+        <img id="fourthPic"  src={data.projects[3].image} alt="" />
       </div>
     </>
   )
