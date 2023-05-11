@@ -18,6 +18,12 @@ export default function OtherProjects(){
           <img src={data.projects[0].image} alt="" />
           <img src={data.projects[3].image} alt="" />
         </div>
+        <div className="firstSlide">
+          <img src={data.projects[1].image} alt="" />
+          <img src={data.projects[2].image} alt="" />
+          <img src={data.projects[0].image} alt="" />
+          <img src={data.projects[3].image} alt="" />
+        </div>
       </div>
     </>
   )

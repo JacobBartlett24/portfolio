@@ -157,7 +157,6 @@
   display: grid;
   overflow: hidden;
   grid-template-columns: 15vw calc(85vw - 40px);
-  padding: 40px;
   background-color: $black;
   @media (max-width: $width-breakpoint) {
     display: flex;

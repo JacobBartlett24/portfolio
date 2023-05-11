@@ -4,6 +4,7 @@
   background-color: #1a1a1a;
   position: relative;
   z-index: 7;
+  padding: 2rem;
 }
 @media (max-width: 1000px) {
   .navBar {
