@@ -67,14 +67,14 @@ export default function Header(){
               </NavLink>
             </li>
             <li>
-              <NavLink prefetch="intent" to="/education">
+              {/* <NavLink prefetch="intent" to="/education">
                 Education
-              </NavLink>
+              </NavLink> */}
             </li>
             <li>
-              <NavLink prefetch="intent" to="/contact">
+              {/* <NavLink prefetch="intent" to="/contact">
                 Contact
-              </NavLink>
+              </NavLink> */}
             </li>
           </ul>
           <Link to="/">
