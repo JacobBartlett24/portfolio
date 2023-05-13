@@ -13,6 +13,7 @@ import ProfilePicture from "./ProfilePicture";
 import OtherProjects from "./OtherProjects";
 import Contact from "./Contact";
 import Resume from "./Resume";
+import Education from "./Education";
 
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: styles }];
@@ -52,6 +53,7 @@ useEffect(() => {
         <Tools />
         <ProjectSpotlight />
         <OtherProjects />
+        <Education />
         <Resume />
         <Contact />     
       </div>

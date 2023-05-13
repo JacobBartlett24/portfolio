@@ -68,7 +68,7 @@
     width: 200px;
   }
 }
-.imgHolder #blurb {
+.imgHolder .blurb {
   color: rgba(235, 235, 235, 0.87);
   font-style: italic;
   text-align: center;
@@ -292,6 +292,12 @@
   white-space: nowrap;
   scroll-snap-align: start;
 }
+@media (max-width: 1000px) {
+  .otherProjects {
+    width: 160px;
+    height: 160px;
+  }
+}
 .otherProjects:hover .firstSlide {
   animation-play-state: paused;
 }
@@ -301,6 +307,12 @@
   border-radius: 15px;
   margin: 0 6rem 0 0;
   transition: 0.25s box-shadow;
+}
+@media (max-width: 1000px) {
+  .otherProjects img {
+    width: 160px;
+    height: 100px;
+  }
 }
 .otherProjects img:hover {
   box-shadow: 0 0 10px 5px #2f2f2f;
@@ -341,6 +353,12 @@
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 1000px) {
+  .contactWrapper .contactCard {
+    width: 150px;
+    height: 300px;
+  }
+}
 .contactWrapper a {
   text-decoration: none;
 }
@@ -363,8 +381,8 @@
 }
 @media (max-width: 1000px) {
   .iconSmall {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
   }
 }
 .iconSmall:hover {
@@ -387,6 +405,20 @@
   color: rgba(235, 235, 235, 0.87);
   border: 1px solid rgba(200, 200, 200, 0.1);
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07), 0 1px 4px rgba(0, 0, 0, 0.07);
+}
+
+.blurb {
+  color: rgba(235, 235, 235, 0.87);
+  font-style: italic;
+  text-align: center;
+}
+
+.TexasTechLogo {
+  margin-top: 20rem;
+}
+
+.education {
+  margin-bottom: 14rem;
 }
 
 /*# sourceMappingURL=body.css.map */

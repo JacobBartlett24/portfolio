@@ -67,7 +67,7 @@
   
 }
 
-  #blurb{
+  .blurb{
     color: $textColor;
     font-style: italic;
     text-align: center;
@@ -290,6 +290,10 @@
   justify-content: center;
   white-space: nowrap;
   scroll-snap-align: start;
+  @media (max-width: $width-breakpoint){
+    width: 160px;
+    height: 160px;
+  }
   &:hover .firstSlide{
     animation-play-state: paused;
   }
@@ -299,7 +303,10 @@
     border-radius: 15px;
     margin: 0 6rem 0 0;
     transition: .25s box-shadow;
-    
+    @media (max-width: $width-breakpoint){
+      width: 160px;
+      height: 100px;
+    } 
   }
   img:hover{
     box-shadow: 0 0 10px 5px $secondaryBlack;
@@ -341,6 +348,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: $width-breakpoint){
+      width: 150px;
+      height: 300px;
+    }
   }
   a{
     text-decoration: none;
@@ -363,8 +374,8 @@
   text-decoration: none;
   color: whitesmoke;
   @media (max-width: $width-breakpoint){
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
   }
   &:hover{
     scale: 1.3;
@@ -387,4 +398,18 @@
   color: $textColor;
   border: $obviousborderblack;
   box-shadow: $boxShadowBlack;
+}
+
+.blurb{
+  color: $textColor;
+  font-style: italic;
+  text-align: center;
+}
+
+.TexasTechLogo{
+  margin-top: 20rem;
+}
+
+.education{
+  margin-bottom: 14rem;
 }
