@@ -337,6 +337,9 @@
     align-items: center;
     justify-content: center;
   }
+  a{
+    text-decoration: none;
+  }
 }
 
 .sectionTitle{
@@ -351,12 +354,15 @@
   width: 150px;
   height: 150px;
   scale: 1;
-  transition: .25s scale;
+  transition: .25s scale, .25s color;
+  text-decoration: none;
+  color: whitesmoke;
   @media (max-width: $width-breakpoint){
     width: 100px;
     height: 100px;
   }
   &:hover{
     scale: 1.3;
+    color: $textHoverColor;
   }
 }

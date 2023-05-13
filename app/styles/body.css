@@ -336,6 +336,9 @@
   align-items: center;
   justify-content: center;
 }
+.contactWrapper a {
+  text-decoration: none;
+}
 
 .sectionTitle {
   margin-bottom: 6rem;
@@ -349,7 +352,9 @@
   width: 150px;
   height: 150px;
   scale: 1;
-  transition: 0.25s scale;
+  transition: 0.25s scale, 0.25s color;
+  text-decoration: none;
+  color: whitesmoke;
 }
 @media (max-width: 1000px) {
   .iconSmall {
@@ -359,6 +364,7 @@
 }
 .iconSmall:hover {
   scale: 1.3;
+  color: #37DA96;
 }
 
 /*# sourceMappingURL=body.css.map */

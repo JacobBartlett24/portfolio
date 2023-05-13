@@ -8,14 +8,18 @@ export default function Contact() {
     <h2 id="Contact" className="sectionTitle">Contact</h2>
     <div className="contactWrapper">
       <div className="contactCard">
-          <IconContext.Provider value={{className: 'iconSmall'}}>
-            <MdOutlineEmail />
-          </IconContext.Provider>
+          <a href="mailto: jacobart@ttu.edu" target="_blank" rel="noreferrer">
+            <IconContext.Provider value={{className: 'iconSmall'}}>
+              <MdOutlineEmail />
+            </IconContext.Provider>
+          </a>
       </div>
       <div className="contactCard">
-          <IconContext.Provider value={{className: 'iconSmall'}}>
-            <RxDiscordLogo />
-          </IconContext.Provider>
+          <a href="https://discordapp.com/users/183262216726904832" target="_blank" rel="noreferrer">
+            <IconContext.Provider value={{className: 'iconSmall'}}>
+              <RxDiscordLogo />
+            </IconContext.Provider>
+          </a>
       </div>
       
     </div>
