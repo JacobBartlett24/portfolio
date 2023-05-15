@@ -43,3 +43,4 @@ export default function App() {
     </html>
   );
 }
+//Deployed at https://portfolio-jacobbartlett24.vercel.app/
