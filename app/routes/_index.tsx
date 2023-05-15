@@ -5,7 +5,7 @@ import styles from "../styles/header.css";
 import Body from "~/components/Body";
 
 export const meta: V2_MetaFunction = () => {
-  return [{ title: "New Remix App" }];
+  return [{ title: "Jacob's Portfolio" }];
 };
 
 export default function Index() {
