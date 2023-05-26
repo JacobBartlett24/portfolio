@@ -26,8 +26,6 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
-  scroll-snap-type: y mandatory;
-  
 }
 
 .tools{
@@ -385,6 +383,7 @@
 
 #downloadResumeButton{
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
   text-decoration: none;
@@ -460,4 +459,15 @@
     white-space: pre-line;
     overflow-wrap: break-word;
   }   
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+.educationAnchor{
+  top: 100px !important; 
 }

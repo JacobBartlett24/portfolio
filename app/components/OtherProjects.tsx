@@ -36,7 +36,9 @@ export default function OtherProjects(){
 
   return(
     <>
-      <h2 id="OtherProjects" className="sectionTitle">Other Projects</h2>
+      <a href="#" id="OtherProjects" className="anchor"></a>
+
+      <h2 className="sectionTitle">Other Projects</h2>
       <div className="otherProjects">
         <Slides />
         <Slides />
